@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import SwipeButtons from '../components/SwipeButtons';
 import SwipeDesc from '../components/SwipeDesc';
 
