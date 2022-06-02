@@ -1,10 +1,8 @@
-const Header = () => {
-  return (
-  <div class ="header">
-    <span class="headtext"> Star Love</span>
-    <img src="image/**" class="logo" alt="my-logo" />
+const Header = () => (
+  <div className="header">
+    <span> Star Love</span>
+    <img src="image/**" alt="my-logo" />
   </div>
-  );
-};
+);
 
 export default Header;
