@@ -1,4 +1,5 @@
 const SwipeButtons = () => {
+  
   return (
     <div className="swipeButtons">
       <button>

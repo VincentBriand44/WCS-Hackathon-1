@@ -9,11 +9,13 @@ const Swipe = () => {
   const [ profile, setProfile ] = useState(true);
   
   const [ characters, setCharacters ] = useState([]);
-  console.log(characters)
+ 
+  
   useEffect(()=>{
-    fetch("https://github.com/Miadil/starwars-api/blob/master/api/all.json")
+    console.log("test")
+    fetch("https://raw.githubusercontent.com/Miadil/starwars-api/master/api/all.json")
     .then((res) => res.json())
-    .then((res)=> setCharacters(res))
+    .then((res)=>  setCharacters(res))
   }, [])
   return (
     <div className="swipe">
@@ -24,9 +26,10 @@ const Swipe = () => {
       <Footer /> 
      </>
      }
-      
+     
      
     </div>
+     
   );
 };
 
