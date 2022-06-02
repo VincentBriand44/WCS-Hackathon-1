@@ -1,0 +1,22 @@
+.swipedesc {
+
+    color: white;
+
+    h3 {
+      display: flex;  
+      font-size: 1.6em;
+      padding-left:10px ;
+
+      span {
+          font-size: 1.4em;
+      }
+    }
+    
+    p {
+        font-size: 1em ;
+        justify-content: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
