@@ -1,0 +1,14 @@
+.swipeImage {
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+  box-sizing: border-box;
+}
