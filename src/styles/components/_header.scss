@@ -1,16 +1,16 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-}
-.logo{
-        height: 30px;
-    
-}
-  
-.headtext {
-        font-weight: bold;
-        font-size: 25px;
-        text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+ 
+  img {
+    height: 30px;
+  }
+ 
+  span {
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87; 
+  } 
 }

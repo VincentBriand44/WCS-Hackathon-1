@@ -1,4 +1,5 @@
-import { Route, Routes } from "react-router-dom"; 
+import { Route, Routes } from "react-router-dom";
+import SwipeProfile from "./components/SwipeProfile";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Swipe from "./pages/Swipe";

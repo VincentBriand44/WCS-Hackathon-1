@@ -6,7 +6,7 @@ import profileImg from "../styles/img/profile/profil.png"
 const Profile = () => {
   return (
     
-    <div className="profile">
+    <div className="profileDiv">
       <Header />
       <div className="profileItem">
         <img src={profileImg} alt=""/>
