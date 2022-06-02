@@ -1,8 +1,9 @@
 .profile {
-    
+    padding: 0;
 
-    img {
+    .imageProfil {
         width:100%;
+        padding: 0;
     }
 
     h3 {
@@ -12,6 +13,10 @@
       font-size: 1.6em;
       margin-top: 20px;
       margin-bottom: 8px;
+    }
+    
+    span {
+        padding-left: 5px;
     }
 
     h2 {
