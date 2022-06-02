@@ -7,6 +7,7 @@
 @import "./components/swipebuttons";
 @import "./components/swipedesc";
 @import "./components/swipeimage";
+@import "./components/swipeprofile";
 
 @import "./pages/home";
 @import "./components/homebuttons";
@@ -20,5 +21,4 @@ body {
   background-color: #fff;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
 }
