@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import SwipeProfile from "./components/SwipeProfile";
 import Home from "./pages/Home";
+import Profile from "./pages/Profile";
 import Swipe from "./pages/Swipe";
 
 function App() {
@@ -8,8 +9,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="app" element={<Swipe />} />
-       
+        <Route path="/app" element={<Swipe />} />
+        <Route path="/app/profile" element={<Profile />} />
       </Routes>
     </div>
   );
