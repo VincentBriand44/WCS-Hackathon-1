@@ -6,7 +6,7 @@ const SwipeImage = () => {
   return (
     <div className="swipeImage" style={{ backgroundImage:`url(${bg})` }}>
       <SwipeDesc />
-      <SwipeButtons />
+      <SwipeButtons profile={true} />
     </div>
   );
 };
