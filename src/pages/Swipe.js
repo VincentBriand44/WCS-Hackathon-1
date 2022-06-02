@@ -5,7 +5,7 @@ import SwipeImage from "../components/SwipeImage";
 
 const Swipe = () => {
   return (
-    <div>
+    <div className="swipe">
       <Header />
       <SwipeImage />
       <Footer />
