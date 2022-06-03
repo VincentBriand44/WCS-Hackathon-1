@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/app" element={<Swipe />} />
         <Route path="/app/:id" element={<SwipeProfile />} />
-        <Route path="/app/itsmatch" element={<ItsMatch />} />
+        <Route path="/app/itsmatch/:id" element={<ItsMatch />} />
         <Route path="/app/profile" element={<Profile />} />
         <Route path="/app/matches" element={<Matches />} />
         <Route path="/app/inscription" element={<Inscription />} />
