@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 
    
     function Inscription () {
@@ -11,37 +12,42 @@ import React, {useState} from 'react';
                 const [speciesInput, setspeciesInput] = useState('');
                 const [genderInput, setgenderInput] = useState('');
            
-                const  input=(e)=> {
+            
+                  localStorage.setItem("name", `${nameInput}`);
+               
+
+                  const input =(e)=>{
                 e.preventDefault ();
                 console.log(`${nameInput}:${fnameInput}:${ageInput}:${cityInput}:${speciesInput}:${genderInput}`);
         };
         return (
-        <> 
+        <div className="globalForm"> 
         <Header />   
         <div className="toto">    
           
          <form>
           <div>  
             <label htmlFor="name">
-              Name :
               <input
+                className="criteres"
                 type="text"
                 name="name"
                 id="name"
-                placeholder="Mary"
+                placeholder="Bly"
                 value={nameInput}
                 onChange={(e) => setnameInput(e.target.value)}
               />
+              
             </label>
            </div>
            <div> 
             <label htmlFor="fname">
-              First Name :
               <input
+                className="criteres"
                 type="text"
                 name="first name"
                 id="first name"
-                placeholder="Pasici"
+                placeholder="Bee"
                 value={fnameInput}
                 onChange={(e) => setfnameInput(e.target.value)}
               />
@@ -49,12 +55,13 @@ import React, {useState} from 'react';
            </div>
            <div>
             <label htmlFor="age">
-              Age :
+              
               <input
+                className="criteres"
                 type="text"
                 name="age"
                 id="age"
-                placeholder="22"
+                placeholder="53"
                 value={ageInput}
                 onChange={(e) => setageInput(e.target.value)}
               />
@@ -62,12 +69,13 @@ import React, {useState} from 'react';
            </div>
            <div>
             <label htmlFor="City">
-              City :
+              
               <input
+                className="criteres"
                 type="text"
                 name="city"
                 id="city"
-                placeholder="Paname"
+                placeholder="Kamino"
                 value={cityInput}
                 onChange={(e) => setcityInput(e.target.value)}
               />
@@ -75,12 +83,13 @@ import React, {useState} from 'react';
            </div>
            <div>
             <label htmlFor="Species">
-              Species :
+              
               <input
+                className="criteres"
                 type="text"
                 name="species"
                 id="Species"
-                placeholder="Human"
+                placeholder="Optionnal"
                 value={speciesInput}
                 onChange={(e) => setspeciesInput(e.target.value)}
               />
@@ -88,24 +97,26 @@ import React, {useState} from 'react';
            </div>
            <div> 
             <label htmlFor="Gender">
-              Gender :
+              
               <input
+                className="criteres"
                 type="text"
                 name="Gender"
                 id="Gender"
-                placeholder="Male"
+                placeholder="Female"
                 value={genderInput}
                 onChange={(e) => setgenderInput(e.target.value)}
               />
             </label>
            </div>
-           
-            <button type="submit" onClick={input}>
+           <Link to="/app"> 
+            {/* <button type="submit" onClick={input}> */}
+            <button className="btn">
               Submit
-            </button>
+            </button></Link>
           </form>
         </div>
-        </>
+        </div>
         );
     };
  

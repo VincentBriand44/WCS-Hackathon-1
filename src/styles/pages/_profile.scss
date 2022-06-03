@@ -1,0 +1,63 @@
+.profileDiv {
+    .profileItem {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        img {
+            object-fit: contain;
+            height: 200px;
+            width: 200px;
+        }
+
+        .profileImage {
+            border: rgba($color: #9b44ed, $alpha: 0.5) 8px solid;
+            background: rgba($color: #9b44ed, $alpha: 0.1);
+            border-radius: 50%;
+            padding: 18px;
+        }
+
+        .profileText {
+            padding-left: 20px;
+            
+            p {
+                margin-bottom: 50px;
+            }
+            
+            h2 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 50px;
+                color: #9b44ed;
+            }
+            
+            h3{
+                color: #9b44ed;
+                display: flex;
+                align-items: center;    
+            }
+        }
+
+        button {
+            display: flex;
+            width: 20px;
+            height: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            
+            img {
+                display: flex;
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+
+
+
+
+    
+}
