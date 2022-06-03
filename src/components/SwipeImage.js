@@ -15,7 +15,7 @@ const SwipeImage = (props) => {
       .then((res) => console.log(characters) || setCharacters(res))
   }, [])
     useEffect(() => {
-       setRandomise(Math.floor(Math.random() * 10))
+       setRandomise(Math.floor(Math.random() * 50))
   },[])
   return (
   <div className="swipeImage">

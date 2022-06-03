@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import Header from '../components/Header';
 import iconSaber from "../styles/img/logo.png"
 
 const ItsMatch = (props) => {
@@ -13,22 +14,25 @@ const ItsMatch = (props) => {
       .then((res) => setCharacter(res))
   }, [])
     return (
-        <div className="firstmatch"> 
-        <div className="logomatch">
-        <img src={iconSaber}/>
-        <h1>Star Love</h1>
-            </div>
-            <img src={character.image} alt=""/>
-        <div className="newmatch">
-           
-            <span>M</span>
-            <span>A</span>
-            <span>T</span>
-            <span>C</span>
-            <span>H</span>
-               <br></br>
-            <span>!</span>
-        </div>
+        <div className="itsmatch"> 
+            <Link to="/app">
+            
+                <div className="logomatch">
+                    <img src={iconSaber} /> 
+                    <h1>Star Love</h1>
+                </div>  
+                <img src={character.image} alt=""/>
+                <div className="newmatch">
+                
+                    <span>M</span>
+                    <span>A</span>
+                    <span>T</span>
+                    <span>C</span>
+                    <span>H</span>
+                    <br></br>
+                    <span>!</span>
+                </div>
+            </Link>
         </div>
     )
 }
