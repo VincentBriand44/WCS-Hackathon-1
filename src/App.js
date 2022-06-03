@@ -18,6 +18,7 @@ function App() {
         <Route path="/app/profile" element={<Profile />} />
         <Route path="/app/matches" element={<Matches />} />
         <Route path="/app/inscription" element={<Inscription />} />
+         
       </Routes>
     </div>
   );
