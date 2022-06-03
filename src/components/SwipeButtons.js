@@ -8,15 +8,15 @@ const SwipeButtons = (props) => {
    
   const randomTestMatch = () => {
     if (props.randomise === props.character.id) {
-      console.log('yolllo', props.randomise, props.character.id)
-      props.setItsMatch(true)
+      
+    props.setItsMatch(true)
     } 
   }
 
-  console.log("Number: ",props);
+  
   return (
     <div className="swipeButtons">
-      {console.log("wwwwwww", props.randomise)}
+     
       <a href={`#slides__${props.nbr + 1}`}>
         <img src={denyImg} alt="deny" draggable={false} />
       </a>

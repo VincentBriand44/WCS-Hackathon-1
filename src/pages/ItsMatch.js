@@ -7,10 +7,10 @@ const ItsMatch = (props) => {
 
     const { id } = useParams();
     useEffect(() => {
-         console.log(id)
+         
       fetch(`https://raw.githubusercontent.com/Miadil/starwars-api/master/api/id/${id}.json`)
       .then((res) => res.json())
-      .then((res) => console.log('ddd',res) || setCharacter(res))
+      .then((res) => setCharacter(res))
   }, [])
     return (
         <div className="firstmatch"> 

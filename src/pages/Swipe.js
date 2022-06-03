@@ -12,7 +12,7 @@ const Swipe = () => {
  
   
   useEffect(()=>{
-    console.log("test")
+   
     fetch("https://raw.githubusercontent.com/Miadil/starwars-api/master/api/all.json")
     .then((res) => res.json())
     .then((res)=>  setCharacters(res))
