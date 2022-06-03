@@ -17,6 +17,9 @@ const Swipe = () => {
     .then((res) => res.json())
     .then((res)=>  setCharacters(res))
   }, [])
+
+  
+
   return (
 
     <div className="swipe">

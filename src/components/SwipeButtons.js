@@ -16,24 +16,25 @@ const SwipeButtons = (props) => {
   
   return (
     <div className="swipeButtons">
-     
-      <a href={`#slides__${props.nbr + 1}`}>
-        <img src={denyImg} alt="deny" draggable={false} />
-      </a>
-      {/* {props.profile ?
+      {props.profile &&
+        <a href={`#slides__${props.nbr + 1}`}>
+          <img src={denyImg} alt="deny" draggable={false} />
+        </a>
+      }
+      {props.profile ?
         <Link to={`/app/${props.nbr + 1}`}>
           <img src={profileImg} alt="profile" draggable={false} />
         </Link> : 
         <Link to={`/app#slides__${props.nbr}`}>
           <img src={profileImg} alt="profile" draggable={false} />
         </Link>
-      } */}
+      } 
       {
         props.itsMatch ? 
           <Link to={`/app/itsmatch/${props.character.id}`} >
             <img src={allowImg} alt="allow" draggable={false} />
           </Link>
-        : <a href={`#slides__${props.nbr + 1}`}>
+        : props.profile && <a href={`#slides__${props.nbr + 1}`}>
             <img src={allowImg} alt="allow" draggable={false} onClick={randomTestMatch } />
           </a>
       }
