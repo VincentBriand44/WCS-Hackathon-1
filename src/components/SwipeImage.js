@@ -14,7 +14,7 @@ const SwipeImage = (props) => {
   <div className="swipeImage">
     <div className="swipeImages">
       {characters.map((character, index) => (
-        <div key={index} className="background" id={`slides__${index}`} style={{ backgroundImage:`url(${character.image !== null && character.image})` }} >
+        <div key={index} className="background" id={`slides__${index}`} ref={`slide${index}`} style={{ backgroundImage:`url(${character.image !== null && character.image})` }} >
           <SwipeDesc arr={character} />
           <SwipeButtons profile={props.profile} nbr={index} />
         </div>
