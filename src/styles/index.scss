@@ -4,6 +4,7 @@
 @import "./components/header";
 
 @import "./pages/swipe";
+@import "./pages/itsmatch";
 @import "./components/swipebuttons";
 @import "./components/swipedesc";
 @import "./components/swipeimage";
@@ -14,6 +15,8 @@
 @import "./pages/home";
 @import "./components/homebuttons";
 
+@import "./components/inscription";
+
 body {
   margin: 0;
   padding: 0;
@@ -22,5 +25,16 @@ body {
   color: #333;
   background-color: #fff;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  > div {
+    max-width: 600px;
+  }
 }
