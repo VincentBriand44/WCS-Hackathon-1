@@ -1,0 +1,47 @@
+.profileDiv {
+    .profileItem {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+            img {
+                object-fit: contain;
+                height: 300px;
+                width: 300px;
+            }
+        .profileText{
+            padding-left: 20px;
+            p{
+                margin-bottom: 50px;
+            }
+            h2 {
+                display: flex;
+                align-items: center;
+                
+            }
+            h3{
+                display: flex;
+                align-items: center;    
+            }
+        }
+
+        button{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            img {
+                display: flex;
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+
+
+
+
+    
+}
