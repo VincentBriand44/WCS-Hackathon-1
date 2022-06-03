@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: column;
     background-image: url(../img/itsmatch/space.png);
-    height: 812px;
+    height: 100vh;
+    width: 100%;
     
     .logomatch {
         display: flex;
@@ -15,7 +16,7 @@
         h1{
             color: #fff;
             font-size: 20px;
-            text-shadow: 0  0 30px #f4aaf6, 0 0 30px #48088d;
+            text-shadow: 0  0 30px #f4aaf6;
         }
         
     }
@@ -39,7 +40,7 @@
     span{
         -webkit-text-stroke-width: 1.35px;
         -webkit-text-stroke-color: #000;
-        font-size: 4em;
+        font-size: 5em;
         text-shadow: 0 0px #FF6D00, 0 0px #240046;
         transform: translate(0, 100%) rotate(4deg);
         animation: jump 5s ease-in-out infinite;

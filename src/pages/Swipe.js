@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SwipeImage from "../components/SwipeImage";
@@ -17,16 +18,19 @@ const Swipe = () => {
     .then((res)=>  setCharacters(res))
   }, [])
   return (
-const Swipe = () => (
+
     <div className="swipe">
       {profile ? <SwipeProfile nbr={characterCount} /> :
       <>
         <Header />
-        <SwipeImage profile={setProfile} nbr={characterCount} />
+        <SwipeImage profile={setProfile} 
+        
+       
+        />
         <Footer /> 
       </>
       }
     </div>
-);
+);}
 
 export default Swipe;
