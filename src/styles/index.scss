@@ -4,6 +4,7 @@
 @import "./components/header";
 
 @import "./pages/swipe";
+@import "./pages/itsmatch";
 @import "./components/swipebuttons";
 @import "./components/swipedesc";
 @import "./components/swipeimage";
@@ -12,6 +13,8 @@
 @import "./components/profile";
 @import "./pages/home";
 @import "./components/homebuttons";
+
+@import "./components/inscription";
 
 body {
   margin: 0;

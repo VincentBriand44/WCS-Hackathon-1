@@ -1,4 +1,3 @@
-import logo from '../styles/img/logo.png';
 
 const Header = () => (
   <div className="header">
