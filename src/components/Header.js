@@ -1,7 +1,9 @@
+import logo from '../styles/img/logo.png';
+
 const Header = () => (
   <div className="header">
+    <img src={logo} alt="logo" />
     <span> Star Love</span>
-    <img src="image/**" alt="my-logo" />
   </div>
 );
 

@@ -1,4 +1,4 @@
-import { useState, useEffect} from "react";
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SwipeImage from "../components/SwipeImage";
@@ -6,30 +6,19 @@ import SwipeProfile from "../components/SwipeProfile";
 
 
 const Swipe = () => {
-  const [ profile, setProfile ] = useState(true);
-  
-  const [ characters, setCharacters ] = useState([]);
- 
-  
-  useEffect(()=>{
-    console.log("test")
-    fetch("https://raw.githubusercontent.com/Miadil/starwars-api/master/api/all.json")
-    .then((res) => res.json())
-    .then((res)=>  setCharacters(res))
-  }, [])
+  const [ profile, setProfile ] = useState(false);
+  const [ characterCount, setCharactersCount ] = useState(1);
+
   return (
     <div className="swipe">
-     {profile ? <SwipeProfile arr={characters} /> :
-     <>
-      <Header />
-      <SwipeImage profile={setProfile} />
-      <Footer /> 
-     </>
-     }
-     
-     
+      {profile ? <SwipeProfile nbr={characterCount} /> :
+      <>
+        <Header />
+        <SwipeImage profile={setProfile} nbr={characterCount} />
+        <Footer /> 
+      </>
+      }
     </div>
-     
   );
 };
 
