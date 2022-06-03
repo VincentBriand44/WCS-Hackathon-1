@@ -1,15 +1,35 @@
+import { useEffect, useState } from 'react';
 import SwipeButtons from '../components/SwipeButtons';
 import SwipeDesc from '../components/SwipeDesc';
 
-const SwipeImage = (props) => {
-  let bg ="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60";
 
+const SwipeImage = (props) => {
+  const [characters, setCharacters] = useState([]);
+  const [randomise, setRandomise] = useState(0)
+ const [itsMatch, setItsMatch] = useState(false)
+  
+
+  useEffect(() => {
+      fetch(`https://raw.githubusercontent.com/Miadil/starwars-api/master/api/all.json`)
+      .then((res) => res.json())
+      .then((res) => console.log(characters) || setCharacters(res))
+  }, [])
+    useEffect(() => {
+       setRandomise(Math.floor(Math.random() * 10))
+  },[])
   return (
-    <div className="swipeImage" style={{ backgroundImage:`url(${bg})` }}>
-      <SwipeDesc />
-      <SwipeButtons profile={props.profile} />
+  <div className="swipeImage">
+    <div className="swipeImages">
+      {characters.map((character, index) => (
+        <div key={index} className="background" id={`slides__${index}`} style={{ backgroundImage:`url(${character.image !== null && character.image})` }} >
+          <SwipeDesc arr={character} />
+          <SwipeButtons profile={props.profile} nbr={index} character={character} itsMatch={itsMatch} setItsMatch={setItsMatch} randomise={randomise} />
+        </div>
+      ))}
     </div>
-  );
-};
+  </div>
+  
+); 
+}
 
 export default SwipeImage;

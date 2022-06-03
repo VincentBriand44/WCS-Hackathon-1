@@ -1,14 +1,39 @@
 .swipeImage {
   height: calc(100vh - 100px);
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 25px;
+  padding: 0 10px;
   box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  .swipeImages {
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  .background {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    box-sizing: border-box;
+    
+    flex-shrink: 0;
+    scroll-snap-align: center;
+  }
 }
