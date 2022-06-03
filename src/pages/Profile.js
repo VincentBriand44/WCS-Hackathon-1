@@ -37,7 +37,9 @@ const Profile = () => {
     <div className="profileDiv">
       <Header />
       <div className="profileItem">
-        <img src={ProfImg} alt=""/>
+        <div className="profileImage">
+          <img src={ProfImg} alt=""/>
+        </div>
         <div className="profileText">
           <h2> 
             <span id="name"> Bly Bee</span> 
