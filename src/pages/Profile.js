@@ -23,7 +23,7 @@ function changeDescri(){
   document.getElementById("descri").innerHTML=descri_id;
 }
 function changePosition(){
-  let pos_id= prompt("Entrez votre positio nde recherche", "votre lieu de recherche ?");
+  let pos_id= prompt("Entrez votre position actuelle", "votre lieu de recherche ?");
   document.getElementById("pos").innerHTML=pos_id;
 }
 function changePassion(){
