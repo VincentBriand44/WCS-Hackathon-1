@@ -11,7 +11,11 @@ import React, {useState} from 'react';
                 const [speciesInput, setspeciesInput] = useState('');
                 const [genderInput, setgenderInput] = useState('');
            
-                const  input=(e)=> {
+            
+                  localStorage.setItem("name", `${nameInput}`);
+               
+
+                  const input =(e)=>{
                 e.preventDefault ();
                 console.log(`${nameInput}:${fnameInput}:${ageInput}:${cityInput}:${speciesInput}:${genderInput}`);
         };
@@ -32,6 +36,7 @@ import React, {useState} from 'react';
                 value={nameInput}
                 onChange={(e) => setnameInput(e.target.value)}
               />
+              
             </label>
            </div>
            <div> 
