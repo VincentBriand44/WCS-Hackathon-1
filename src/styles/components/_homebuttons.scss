@@ -23,6 +23,20 @@
     margin-left: 50%!important;
     transform: translateX(-50%);
     box-sizing: border-box;
+
+    &:last-child {
+        background: none;
+        outline: rgba(255, 255, 255, 0.23) 3px solid;
+        outline-offset: -3px;
+    }
+
+    &:hover {
+        background: rgba(255,255,255,0.23);
+        color: rgba(8, 8, 8, 0.904);
+        text-shadow: none;
+        outline: rgba(255, 255, 255, 0.5) 3px solid;
+        outline-offset: -3px;
+    }
 }
 
 

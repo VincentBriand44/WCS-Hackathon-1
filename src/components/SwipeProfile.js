@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import SwipeButtons from "./SwipeButtons";
 
 const SwipeProfile = (props) => { 
@@ -13,18 +13,18 @@ const SwipeProfile = (props) => {
     }, [])
     return (
         <div className="profile">
-            <img src={character.image} className="imageProfil" alt="profil"/> 
-            
-            <h3>{character.name} <span>{ character.dateCreate ? (-(character.dateCreate) + character.dateDestroy) : ( -(character.born)  + character.died) } </span> 
-            </h3>
-            <h2> Sexe </h2>
-            <p>{character.gender}</p>
-            <h2>À propos</h2>
-            <ul>
-                {/* {character.affiliations.map((affliation, index) => <li key={index}>{affliation}</li>)}  */}
-            </ul>
-            <h2>Position</h2>
-            <p>{character.homeworld}</p>
+            <img src={character.image} alt="profil"/> 
+            <div className='profileBox'>
+                <h3>{character.name} <span>{ character.dateCreate ? (-(character.dateCreate) + character.dateDestroy) : ( -(character.born)  + character.died) } </span> 
+                </h3>
+                <p>{character.gender}</p>
+                <h2>À propos</h2>
+                <ul>
+                    {/* {character.affiliations.map((affliation, index) => <li key={index}>{affliation}</li>)}  */}
+                </ul>
+                <h2>Position</h2>
+                <p>{character.homeworld}</p>
+            </div>
             <SwipeButtons profile={false} nbr={id} />
         </div>
     )
