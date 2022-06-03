@@ -1,9 +1,9 @@
-import logoImage from "../styles/img/logo.png"
+import logo from "../styles/img/logo.png"
 
 const Header = () => (
   <div className="header">
+    <img src={logo} alt="logo" />
     <span> Star Love</span>
-    <img src={logoImage} alt="my-logo" />
   </div>
 );
 
