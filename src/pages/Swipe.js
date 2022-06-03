@@ -6,7 +6,7 @@ import SwipeProfile from "../components/SwipeProfile";
 
 
 const Swipe = () => {
-  const [ profile, setProfile ] = useState(true);
+  const [ profile, setProfile ] = useState(false);
   
   const [ characters, setCharacters ] = useState([]);
  
