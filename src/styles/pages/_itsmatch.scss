@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+.firstmatch {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/itsmatch/space.png);
+    height: 812px;
+    
+    .logomatch {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            color: #fff;
+            font-size: 20px;
+            text-shadow: 0  0 30px #f4aaf6, 0 0 30px #48088d;
+        }
+        
+    }
+
+    img {
+        height: 100px;
+        margin-top: 100px;
+    }
+
+}
+
+
+
+.newmatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    
+
+    span{
+        -webkit-text-stroke-width: 1.35px;
+        -webkit-text-stroke-color: #000;
+        font-size: 4em;
+        text-shadow: 0 0px #FF6D00, 0 0px #240046;
+        transform: translate(0, 100%) rotate(4deg);
+        animation: jump 5s ease-in-out infinite;
+        display: inline-block;
+        font-family:  'Bungee Shade', cursive;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+    
+    
+    @for $i from 1 through 7 {
+     &:nth-child(#{$i}) {
+    animation-delay: 300ms * $i;
+          }
+        }
+      }
+    }
+    @keyframes jump {
+      43% {
+        text-shadow: 0 60px #f37121, 0 150px #ab1594;
+      }
+      46% {
+        transform: translate(0, 0) rotate(-4deg);
+        text-shadow: 0 0px #7B2CBF, 0 0px #8717e4;
+      }
+      66.67% {
+        text-shadow: 0 -60px #e1b70d, 0 -150px #0aa2e3;
+      }
+    
+    
+    
+
+    }
